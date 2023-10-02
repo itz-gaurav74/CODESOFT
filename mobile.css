@@ -162,16 +162,19 @@
   .card img {
     width: 80%;
     aspect-ratio: 0;
-    border-radius: 7px 7px 0 0;
+    /* border-radius: 7px 7px 0 0; */
   }
   .project_title,
   .project_des{
-    font-size: .7em;
+    font-size: 15px;
   }
   .project_data{
     margin: 0 0 3em 0;
-    border-radius: 0 0 7px 7px;
+    height: fit-content;
     border: none;
     border-bottom: 1px solid black;
+  }
+  .go_live_arrow{
+    display: none;
   }
 }

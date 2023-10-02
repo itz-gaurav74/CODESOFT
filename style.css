@@ -213,16 +213,53 @@ a {
   background: no-repeat center top / cover;
   aspect-ratio: 6/3;
   /* width: 80%; */
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
 }
 .project_data{
-  margin: 1em 0 5em 0;
+  margin: 0em 0 5em 0;
   height: 20vh;
-  border: 1px solid black;
   width: 80%;
   font-size: var(--Desktop-fs-mid);
   padding: var(--Desktop-fs-small);
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0 0 7px 7px;
 }
 .project_des{
   margin-top: var(--Desktop-fs-small);
+  text-transform: capitalize;
+}
+.go_live_arrow{
+  width: 25%;
+  position: absolute;
+}
+.go_live_arrow i{
+  transform: translateX(10px) rotate(45deg);
+  width: 0%;
+  left: 0%;
+  bottom: 10px;
+  position: relative;
+  transition: 1.2s ease;
+  animation: go 1.5s ease-in-out infinite;
+  cursor: none;
+  color: black;
+}
+
+@keyframes go {
+  0%{
+    left: 0px;
+    color: black;
+  }
+  50%{
+    left: 50px;
+    color: blanchedalmond;
+    /* transform: translateX(20px) */
+  }
+  100%{
+    color: black;
+    left: 0px;
+  }
+}
+.go_project i{
+  font-size: 25px;
 }
