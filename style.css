@@ -6,6 +6,7 @@
 :root {
   --bdr: 2px solid black;
   --Desktop-fs-mid: 1.5em;
+  --Desktop-fs-small: 1em;
   --Desktop-fs-high: clamp(1.5em, 80vw, 3em);
 }
 
@@ -83,7 +84,7 @@ a {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
+  -text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   overflow: hidden;
   border-right: 3px solid rgb(211, 133, 190);
@@ -136,7 +137,8 @@ a {
 /* -- SHORT BIO END -- */
 
 .brief_bio_section {
-  height: 100vh;
+  border: var(--bdr);
+  height: max-content;
   display: flex;
   flex-wrap: wrap;
   padding: 5em 2em;
@@ -163,12 +165,64 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-
 .skills_data .skill {
   padding: 1em 1.5em;
-  margin-bottom: 1.5em;
   margin-right: 1.5em;
   font-size: 1em;
   background: bisque;
+  border-radius: 10px;
+}
+.contact_btn{
+  height: 70px;
+  width: 140px;
+  background: #8eddadd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+#contact_btn{
+  font-size: 1em;
+    background: transparent;
+    border: none;
+}
+#contact_btn:hover h3{
+  scale: 1.2;
   
+}
+#contact_btn h3{
+  transition: 1.5s ease;
+}
+/* -- BRIEF BIO END -- */
+
+.project_section{
+  margin: 5em 1em 0 1em;
+}
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card picture{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.card img{
+  background: no-repeat center top / cover;
+  aspect-ratio: 6/3;
+  /* width: 80%; */
+  border-radius: 7px;
+}
+.project_data{
+  margin: 1em 0 5em 0;
+  height: 20vh;
+  border: 1px solid black;
+  width: 80%;
+  font-size: var(--Desktop-fs-mid);
+  padding: var(--Desktop-fs-small);
+}
+.project_des{
+  margin-top: var(--Desktop-fs-small);
 }

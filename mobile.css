@@ -7,6 +7,7 @@
   .nav_menu {
     display: none;
   }
+
   .hamburger_menu {
     height: 70px;
     width: 70px;
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .hamburger {
     height: 4px;
     width: 30px;
@@ -22,36 +24,43 @@
     transition: all 0.5s ease-in-out;
     border-radius: 7px;
   }
+
   .hamburger::before,
   .hamburger::after {
     content: "";
-    height: 3px;
+    height: 4px;
     width: 40px;
     background: black;
     position: absolute;
     transition: all 0.5s ease-in-out;
     border-radius: 7px;
   }
+
   .hamburger::before {
     transform: translateY(-15px);
   }
+
   .hamburger::after {
     transform: translateY(15px);
   }
+
   .hamburger_menu.open .hamburger {
     transform: translateX(-50px);
     background: transparent;
   }
+
   .hamburger_menu.open .hamburger::before {
     transform: translate(50px, 0px) rotate(45deg);
     height: 4px;
     width: 30px;
   }
+
   .hamburger_menu.open .hamburger::after {
     transform: translate(50px, 0px) rotate(-45deg);
     height: 4px;
     width: 30px;
   }
+
   .nav_menu {
     position: fixed;
     left: -100%;
@@ -59,11 +68,13 @@
     flex-direction: column;
     width: 100%;
   }
+
   .nav_menu.active {
     left: 0;
     display: block;
     line-height: 4;
   }
+
   .back_body.active {
     display: none;
   }
@@ -73,27 +84,34 @@
     /* font-size: var(--desktop-font); */
     height: 90vh;
   }
+
   .name {
     line-height: 50px;
-    font-size: 3.5em;
+    font-size: calc(2 * var(--Mobile-fs-mid));
   }
+
   .name_hover {
     animation: line 4s ease-in-out infinite;
   }
+
   @keyframes line {
     0% {
       width: 0%;
     }
+
     50% {
       width: 100%;
     }
   }
+
   .typing {
     font-size: var(--Mobile-fs-mid);
   }
+
   .side_one {
     width: 100%;
   }
+
   .side_two {
     width: 100%;
   }
@@ -105,24 +123,55 @@
     font-size: var(--Mobile-fs-small);
   }
 
-  .brief_bio_section{
-    padding: 1em;
-    gap: 1em;
-    font-size: 1em;
+  /* BRIEF BIO SECTION */
+  .brief_bio_section {
+    padding: var(--Mobile-fs-small);
+    gap: var(--Mobile-fs-small);
+    font-size: var(--Mobile-fs-small);
   }
-  .bio_data{
+
+  .bio_data {
     width: 100%;
   }
-  .skills_data{
+
+  .skills_data {
     width: 100%;
   }
+
+  .skills_data h2 {
+    margin-bottom: var(--Mobile-fs-small);
+  }
+
   .skills_data .skill {
-    padding: 1em;
-    margin-right: 1em;
-    font-size: 1em;
+    padding: var(--Mobile-fs-small);
+    margin-right: var(--Mobile-fs-small);
+    font-size: var(--Mobile-fs-small);
     background: bisque;
-}
-.skills_data .skill {
-  margin: .5em;
-}
+  }
+
+  .skills_data .skill {
+    margin: .5em;
+  }
+
+  .contact_btn {
+    height: 50px;
+    width: 100px;
+  }
+
+  /* PROJECT SECTION */
+  .card img {
+    width: 80%;
+    aspect-ratio: 0;
+    border-radius: 7px 7px 0 0;
+  }
+  .project_title,
+  .project_des{
+    font-size: .7em;
+  }
+  .project_data{
+    margin: 0 0 3em 0;
+    border-radius: 0 0 7px 7px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
 }

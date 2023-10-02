@@ -1,80 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-    <title>PortFolio</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#" class="nav_logo">Logo</a>
-        <ul class="nav_menu">
-          <li><a href="#" class="nav_link">Home</a></li>
-          <li><a href="#" class="nav_link">About</a></li>
-          <li><a href="#" class="nav_link">Skills</a></li>
-          <li><a href="#" class="nav_link">Contact</a></li>
-        </ul>
-        <div class="hamburger_menu">
-          <div class="hamburger"></div>
-        </div>
-      </nav>
-    </header>
 
-    <main class="back_body">
-      <section class="about_section">
-        <div class="side_one">
-          <div class="home">
-            <div class="home_center">Hello I'm</div>
-            <div class="name">
-              <span class="name_original">&nbsp;Gaurav&nbsp;</span>
-              <span class="name_hover">&nbsp;Gaurav&nbsp;</span>
-            </div>
-            <div class="typing">
-              <span id="typing_data"></span>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <title>PortFolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" class="nav_logo">Logo</a>
+      <ul class="nav_menu">
+        <li><a href="#" class="nav_link">Home</a></li>
+        <li><a href="#" class="nav_link">About</a></li>
+        <li><a href="#" class="nav_link">Skills</a></li>
+        <li><a href="#" class="nav_link">Contact</a></li>
+      </ul>
+      <div class="hamburger_menu">
+        <div class="hamburger"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="back_body">
+    <section class="about_section">
+      <div class="side_one">
+        <div class="home">
+          <div class="home_center">Hello I'm</div>
+          <div class="name">
+            <span class="name_original">&nbsp;Gaurav&nbsp;</span>
+            <span class="name_hover">&nbsp;Gaurav&nbsp;</span>
+          </div>
+          <div class="typing">
+            <span id="typing_data"></span>
           </div>
         </div>
-        <div class="side_two">
-          <img src="Images/User.jpg" alt="" />
+      </div>
+      <div class="side_two">
+        <img src="Images/User.jpg" alt="" />
+      </div>
+    </section>
+    <section class="short_bio">
+      <div class="bio_card">
+        <h2>About me</h2>
+        <p>In this section, you'll get a compact yet through insight into my background, profession, and my present
+          programming and technology expertise.</p>
+      </div>
+    </section>
+    <section class="brief_bio_section">
+      <section class="bio_data">
+        <h2>Get to know me</h2>
+        <p>I'm a Frontend Web Developer who specializes in crafting the user-facing parts of websites and web
+          applications, driving their overall success. Be sure to explore some of my notable projects in the Projects
+          section.
+        </p>
+        <p>I also have a passion for sharing my wealth of knowledge in web development with the Dev Community, so don't
+          hesitate to connect with me on LinkedIn for engaging discussions and insights into web development and
+          programming.</p>
+        <p>I'm actively seeking job opportunities where I can both contribute my skills and continue to learn and grow.
+          If you have a compelling opportunity that aligns with my experience, please feel free to reach out and get in
+          touch.</p>
+        <div class="contact_btn">
+          <button id="contact_btn">
+            <h3>Contact</h3>
+          </button>
         </div>
       </section>
-      <section class="short_bio">
-        <div class="bio_card">
-          <h2>About me</h2>
-          <p>In this section, you'll get a compact yet through insight into my background, profession, and my present programming and technology expertise.</p>
-        </div>
-      </section>
-      <section class="brief_bio_section">
-        <section class="bio_data">
-          <h2>Get to know me</h2>
-          <p>I'm a Frontend Web Developer who specializes in crafting the user-facing parts of websites and web applications, driving their overall success. Be sure to explore some of my notable projects in the Projects section.
-          </p>
-          <p>I also have a passion for sharing my wealth of knowledge in web development with the Dev Community, so don't hesitate to connect with me on LinkedIn for engaging discussions and insights into web development and programming.</p>
-          <p>I'm actively seeking job opportunities where I can both contribute my skills and continue to learn and grow. If you have a compelling opportunity that aligns with my experience, please feel free to reach out and get in touch.</p>
-        </section>
-        <section class="skills_data">
-          <h2>My skills</h2>
-          <div class="skills">
+      <section class="skills_data">
+        <h2>My skills</h2>
+        <div class="skills">
           <div class="skill">HTML</div>
-          <div class="skill">css</div>
+          <div class="skill">CSS</div>
+          <div class="skill">SASS</div>
           <div class="skill">bootstrap</div>
           <div class="skill">javascript</div>
           <div class="skill">react</div>
           <div class="skill">python</div>
           <div class="skill">git</div>
           <div class="skill">gitHub</div>
-          <div class="skill">responsive design</div>
           <div class="skill">SQL basics</div>
+          <div class="skill">responsive design</div>
         </div>
-        </section>
       </section>
+    </section>
+    <section class="project_section">
+      <div class="project_cards">
+        <div class="card_1 card">
+          <picture>
+            <source media="(max-width:550px)" srcset="/Images/fashion_mobile.jpeg">
+            <img src="Images/fashion_desktop.png" alt="">
+          </picture>
+          <div class="project_data">
+            <div class="project_title">
+              <h2>Fashion Hub</h2>
+            </div>
+            <div class="project_des">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci pariatur laudantium.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_2 card">
+          <picture>
+            <source media="(max-width:550px)" srcset="/Images/gym_mobile.jpeg">
+            <img src="Images/gym_desktop.png" alt="">
+          </picture>
+          <div class="project_data">
+            <div class="project_title">
+              <h2>GYM Website</h2>
+            </div>
+            <div class="project_des">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci pariatur laudantium.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_3 card">
+          <picture>
+            <source media="(max-width:550px)" srcset="/Images/youtube_mobile.jpeg">
+            <img src="Images/youtube_desktop.png" alt="">
+          </picture>
+          <div class="project_data">
+            <div class="project_title">
+              <h2>Youtube Clone</h2>
+            </div>
+            <div class="project_des">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione sapiente laudantium?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 
-    </main>
-  </body>
 </html>
