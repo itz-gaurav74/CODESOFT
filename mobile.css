@@ -160,10 +160,13 @@
     width: 150px;
   }
   .popup-content{
-    width: 50vw;
+    width: 75vw;
   }
   .popup-content h2{
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .close{
+    font-size: 24px;
   }
   /* PROJECT SECTION */
   .project_title h2{

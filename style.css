@@ -227,18 +227,24 @@ a {
   transform: translate(-50%, -50%);
   padding: 20px;
   text-align: center;
-  width: 25vw;
+  width: 30vw;
 }
 .popup-content ol li{
-  margin: 0.5em 0;
+  margin: 1em 0;
+}
+.popup-content ol li a{
+  color: #564a4a  ;
+  font-size: 1.2em;
 }
 
 .close {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 24px;
+  font-size: 50px;
   cursor: pointer;
+  font-weight: 600;
+  margin-right: 5px;
 }
 
 /* #contact_btn:hover h3{
