@@ -106,6 +106,7 @@
 
   .typing {
     font-size: var(--Mobile-fs-mid);
+    padding-left: 15px;
   }
 
   .side_one {
@@ -153,12 +154,24 @@
     margin: .5em;
   }
 
-  .contact_btn {
+  .contact_btn,
+  .resume_btn{
     height: 50px;
-    width: 100px;
+    width: 150px;
   }
-
+  .popup-content{
+    width: 50vw;
+  }
+  .popup-content h2{
+    font-size: 15px;
+  }
   /* PROJECT SECTION */
+  .project_title h2{
+    font-size: 1.5em;
+  }
+  .project_headline{
+    font-size: 2em;
+  }
   .card img {
     width: 80%;
     aspect-ratio: 0;

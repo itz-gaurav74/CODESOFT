@@ -39,9 +39,24 @@ document.addEventListener('DOMContentLoaded', function () {
 const typedData = document.getElementById('typing_data');
 const dev = "Developer"  
 new Typed (typedData, { 
-    strings:[`Front-End ${dev}`, `Javascript ${dev}`, `Python ${dev}`],
+    strings:[`Front-End ${dev}`, `JavaScript ${dev}`, `Python ${dev}`],
     typeSpeed: 100,
     loop:true,
 })
+
+
+
+const popupBtn = document.getElementById("contact_btn");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+popupBtn.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
 
 })
