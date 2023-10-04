@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 // ------------------------------------------
+// --- Hamburger Menu Open And Close Action 
     const menu = document.querySelector('.hamburger_menu');
     const navMenu = document.querySelector('.nav_menu')
     let navLinks = document.querySelectorAll('.nav_link');
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // -------------------------------------------------
 // -------------------------------------------------
 
-
+// --- Typing Effect ---
 const typedData = document.getElementById('typing_data');
 const dev = "Developer"  
 new Typed (typedData, { 
@@ -43,9 +44,10 @@ new Typed (typedData, {
     typeSpeed: 100,
     loop:true,
 })
+// ---------------------------------------------------
+// ---------------------------------------------------
 
-
-
+// --- Contact Pop Up Button --- 
 const popupBtn = document.getElementById("contact_btn");
 const popup = document.getElementById("popup");
 const closeBtn = document.getElementById("closeBtn");
@@ -57,6 +59,7 @@ popupBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     popup.style.display = "none";
 });
-
+// ----------------------------------------------------
+// ----------------------------------------------------
 
 })

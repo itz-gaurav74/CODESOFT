@@ -18,12 +18,13 @@
   <body>
     <header>
       <nav>
-        <a href="#" class="nav_logo">Logo</a>
+        <a href="#" class="nav_logo">Gaurav</a>
         <ul class="nav_menu">
-          <li><a href="#" class="nav_link">Home</a></li>
-          <li><a href="#" class="nav_link">About</a></li>
-          <li><a href="#" class="nav_link">Skills</a></li>
-          <li><a href="#" class="nav_link">Contact</a></li>
+          <li><a href="#home" class="nav_link">Home</a></li>
+          <li><a href="#about" class="nav_link">About</a></li>
+          <li><a href="#skills" class="nav_link">Skills</a></li>
+          <li><a href="#projects" class="nav_link">Projects</a></li>
+          <li><a href="#message" class="nav_link">Message Us</a></li>
         </ul>
         <div class="hamburger_menu">
           <div class="hamburger"></div>
@@ -32,7 +33,7 @@
     </header>
 
     <main class="back_body">
-      <section class="about_section">
+      <section class="about_section" id="home">
         <div class="side_one">
           <div class="home">
             <div class="home_center">Hello I'm</div>
@@ -49,7 +50,7 @@
           <img src="Images/User.jpg" alt="" />
         </div>
       </section>
-      <section class="short_bio">
+      <section class="short_bio" id="about">
         <div class="bio_card">
           <h2>About me</h2>
           <p>
@@ -59,48 +60,58 @@
           </p>
         </div>
       </section>
-      <section class="brief_bio_section">
+      <section class="brief_bio_section" id="skills" >
         <section class="bio_data">
           <h2>Get to know me</h2>
           <p>
-            I'm a <strong> Frontend Web Developer </strong> who specializes in crafting the
-            user-facing parts of websites and web applications, driving their
-            overall success. Be sure to explore some of my notable projects in
-            the <strong> Projects </strong> section.
+            I'm a <strong> Frontend Web Developer </strong> who specializes in
+            crafting the user-facing parts of websites and web applications,
+            driving their overall success. Be sure to explore some of my notable
+            projects in the <strong> Projects </strong> section.
           </p>
           <p>
             I also have a passion for sharing my wealth of knowledge in web
-            development with the <strong> Dev Community,</strong> so don't hesitate to connect with me on <a href="" class="linkedin">LinkedIn</a>  for engaging discussions and insights into web
-            development and programming.
+            development with the <strong> Dev Community,</strong> so don't
+            hesitate to connect with me on
+            <a href="" class="linkedin">LinkedIn</a> for engaging discussions
+            and insights into web development and programming.
           </p>
           <p>
-            I'm actively seeking <strong>job opportunities</strong> where I can both contribute
-            my skills and continue to learn and grow. If you have a compelling
-            opportunity that aligns with my experience, please feel free to
-            reach out and <strong> get in touch.</strong>
+            I'm actively seeking <strong>job opportunities</strong> where I can
+            both contribute my skills and continue to learn and grow. If you
+            have a compelling opportunity that aligns with my experience, please
+            feel free to reach out and <strong> get in touch.</strong>
           </p>
           <div class="btns">
-          <div class="contact_btn">
-            <button id="contact_btn">
-              <h3>Contact <i class="fa-regular fa-address-book"></i></h3>
-            </button>
-          </div>
-          <div id="popup" class="popup">
-            <div class="popup-content">
-              <span class="close" id="closeBtn">&times;</span>
-              <h2>Contact Details</h2>
-              <ol>
-                <li><a href = "mailto: 4gaurav07@gmail.com"><i class="fa-solid fa-envelope"></i> Send-Mail</a></li>
-                <li><a href="tel:8261928996"><i class="fa-solid fa-phone"></i> Call-Us</a></li>
-              </ol>
+            <div class="contact_btn">
+              <button id="contact_btn">
+                <h3>Contact <i class="fa-regular fa-address-book"></i></h3>
+              </button>
+            </div>
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <span class="close" id="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+                <h2>Contact Details</h2>
+                <ol>
+                  <li>
+                    <a href="mailto: 4gaurav07@gmail.com"
+                      ><i class="fa-solid fa-envelope"></i> Send-Mail</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:8261928996"
+                      ><i class="fa-solid fa-phone"></i> Call-Us</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="resume_btn">
+              <button id="resume_btn">
+                <h3>Resume <i class="fa-regular fa-file"></i></h3>
+              </button>
             </div>
           </div>
-          <div class="resume_btn">
-            <button id="resume_btn">
-              <h3>Resume <i class="fa-regular fa-file"></i></h3>
-            </button>
-          </div>
-        </div>
         </section>
         <section class="skills_data">
           <h2>My skills</h2>
@@ -119,7 +130,7 @@
           </div>
         </section>
       </section>
-      <section class="project_section">
+      <section class="project_section" id="projects">
         <h2 class="project_headline">Project Section</h2>
         <div class="project_cards">
           <div class="card_1 card">
@@ -133,7 +144,10 @@
             <div class="project_data">
               <div class="project_title">
                 <h2>
-                  <a href="https://itz-gaurav74.github.io/X-Fashion/" class="go_project" target="_blank"
+                  <a
+                    href="https://itz-gaurav74.github.io/X-Fashion/"
+                    class="go_project"
+                    target="_blank"
                     ><i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
                   X-Fashion!
@@ -162,7 +176,10 @@
             <div class="project_data">
               <div class="project_title">
                 <h2>
-                  <a href="https://itz-gaurav74.github.io/GYM_Website/" class="go_project" target="_blank"
+                  <a
+                    href="https://itz-gaurav74.github.io/GYM_Website/"
+                    class="go_project"
+                    target="_blank"
                     ><i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
                   GYM Website!
@@ -191,7 +208,10 @@
             <div class="project_data">
               <div class="project_title">
                 <h2>
-                  <a href="https://itz-gaurav74.github.io/YouTube_Clone/" class="go_project" target="_blank"
+                  <a
+                    href="https://itz-gaurav74.github.io/YouTube_Clone/"
+                    class="go_project"
+                    target="_blank"
                     ><i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
                   Youtube Clone!
@@ -209,6 +229,30 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="message_section" id="message">
+        <div class="box">
+          <h2>Message Us</h2>
+          <form action="" class="form_body">
+            <input type="text" placeholder="Enter Your Name" class="first">
+            <input type="tel" placeholder="Phone Number" class="second">
+            <input type="email" placeholder="Mail ID" class="third">
+            <textarea placeholder="You'r Message" cols="30" rows="10"></textarea>
+
+          </form>
+        </div>
+      </section>
+      <section class="footer_section">
+        <footer class="footer">
+          <p>&copy; 2023 Gaurav|Sky-Dev. All rights reserved.
+          </p>
+          <div class="social_links">
+            <a href=""><i class="fa-brands fa-linkedin logo"></i></a>
+            <a href=""><i class="fa-brands fa-instagram logo"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter logo"></i></a>
+            <a href=""><i class="fa-brands fa-facebook logo"></i></a>
+          </div>
+        </footer>
       </section>
     </main>
   </body>

@@ -1,9 +1,18 @@
 :root {
   --Mobile-fs-mid: 1.5em;
   --Mobile-fs-small: 1em;
+  --black: #333;
+  --linkedin-blue: #1da1f2;
+  --twitter-black: black;
+  --instagram-pink: #c13584;
+  --fb-blue: #3b5998;
 }
 
 @media (max-width: 550px) {
+  nav{
+    height: 10vh;
+    background: #bcbcbcd9;
+  }
   .nav_menu {
     display: none;
   }
@@ -72,9 +81,11 @@
   .nav_menu.active {
     left: 0;
     display: block;
-    line-height: 4;
+    line-height: 3;
   }
-
+  .nav_menu:hover .nav_link:not(:hover) {
+    filter: blur(0px);
+  }
   .back_body.active {
     display: none;
   }
@@ -151,46 +162,89 @@
   }
 
   .skills_data .skill {
-    margin: .5em;
+    margin: 0.5em;
   }
 
   .contact_btn,
-  .resume_btn{
+  .resume_btn {
     height: 50px;
     width: 150px;
   }
-  .popup-content{
+
+  .popup-content {
     width: 75vw;
   }
-  .popup-content h2{
+
+  .popup-content h2 {
     font-size: 18px;
   }
-  .close{
+
+  .close {
     font-size: 24px;
   }
+
   /* PROJECT SECTION */
-  .project_title h2{
+  .project_title h2 {
     font-size: 1.5em;
   }
-  .project_headline{
+
+  .project_headline {
     font-size: 2em;
   }
+
   .card img {
     width: 80%;
     aspect-ratio: 0;
     /* border-radius: 7px 7px 0 0; */
   }
+
   .project_title,
-  .project_des{
+  .project_des {
     font-size: 15px;
   }
-  .project_data{
+
+  .project_data {
     margin: 0 0 3em 0;
     height: fit-content;
     border: none;
     border-bottom: 1px solid black;
   }
-  .go_live_arrow{
+
+  .go_live_arrow {
     display: none;
+  }
+
+  /* FOOTER SECTION  */
+  .footer {
+    padding: 1em 0;
+  }
+  .footer p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px;
+  }
+  .social_links a .fa-facebook {
+    color: var(--fb-blue);
+    animation: blink 2.5s linear infinite;
+  }
+  .social_links a .fa-x-twitter {
+    color: var(--twitter-black);
+    animation: blink 2.5s linear infinite;
+  }
+  .social_links a .fa-instagram {
+    color: var(--instagram-pink);
+    animation: blink 2.5s linear infinite;
+  }
+  .social_links a .fa-linkedin {
+    color: var(--linkedin-blue);
+    animation: blink 2.5s linear infinite;
+  }
+  @keyframes blink {
+    50% {
+      color: gray;
+    }
+  }
+  .box{
+    max-width: 80%;
   }
 }
