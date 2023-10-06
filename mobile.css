@@ -9,16 +9,24 @@
 }
 
 @media (max-width: 550px) {
-  nav{
-    height: 10vh;
-    background: #bcbcbcd9;
-  }
+ 
+
   .nav_menu {
     display: none;
   }
-
+  nav{
+    height: 7vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
+  .name:hover .name_hover {
+    width: 0;
+    filter: none;
+  }
   .hamburger_menu {
-    height: 70px;
+    height: 50px;
     width: 70px;
     float: right;
     display: flex;
@@ -212,6 +220,25 @@
 
   .go_live_arrow {
     display: none;
+  }
+  .send_data_btn{
+    animation: trans 2s ease-in-out infinite;
+  }
+  @keyframes trans {
+    0%{
+      background-position: 25%;
+    }
+    50%{
+      background-position: 100%;
+      color: #fff;
+    }
+    100%{
+      background-position: 25%;
+    }
+  }
+
+  .scroll_btn h2{
+    font-size: 1em;
   }
 
   /* FOOTER SECTION  */

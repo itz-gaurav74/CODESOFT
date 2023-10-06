@@ -62,4 +62,16 @@ closeBtn.addEventListener("click", () => {
 // ----------------------------------------------------
 // ----------------------------------------------------
 
+// --- Scroll To Top Button ---
+const ScrollTop = document.querySelector('.scroll_btn')
+
+ScrollTop.addEventListener('click', function(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+})
+// ----------------------------------------------------
+// ----------------------------------------------------
+
 })

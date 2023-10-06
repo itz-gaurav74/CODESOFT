@@ -11,14 +11,15 @@
   --Desktop-fs-small: 1em;
   --Desktop-fs-high: clamp(1.5em, 80vw, 4em);
   /* -- FOOTER USE -- */
-  --black:#333;
-  --linkedin-blue:#1da1f2;
-  --twitter-black:black;
-  --instagram-pink:#c13584;
-  --fb-blue:#3b5998;
+  --black: #333;
+  --linkedin-blue: #1da1f2;
+  --twitter-black: black;
+  --instagram-pink: #c13584;
+  --fb-blue: #3b5998;
 }
 
-header {  /* border: var(--bdr); */
+header {
+  /* border: var(--bdr); */
   font-size: var(--Desktop-fs-mid);
   position: sticky;
   top: 0px;
@@ -246,7 +247,7 @@ a {
   color: #564a4a;
   font-size: 1.2em;
 }
-.popup-content ol li a:hover{
+.popup-content ol li a:hover {
   color: #6d5d41eb;
   font-weight: 600;
 }
@@ -353,82 +354,140 @@ a {
 }
 /* -- PROJECT SECTION END -- */
 
-.message_section{
-  background: linear-gradient(to right, rgba(245,245,245,0.8),rgba(245,245,245,.8));
+.message_section {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
   display: flex;
   justify-content: center;
 }
-.box{
+.box {
   width: 80%;
   max-width: 40%;
   margin: 2em 0;
 }
-.box h2{
+.box h2 {
   text-align: center;
   margin-bottom: 1em;
   width: 100%;
   text-align: center;
   font-size: 3em;
 }
-.form_body{
+.form_body {
   display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 5px auto;
-    align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px auto;
+  align-items: center;
 }
 
 .form_body input,
-.form_body textarea{
+.form_body textarea {
   width: 80%;
   padding: 1em;
-  margin: .5em;
+  margin: 0.5em;
   border: 1px solid rgb(204, 204, 204);
   letter-spacing: 2px;
 }
+/* .submit_btn{
+  height: 50px;
+  width: 130px;
+  background: #8eddadd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  font-size: 1.3em;
+} */
+.send_data_btn {
+  border-color: #ffffff;
+  padding: 0.6em 2.3em;
+  cursor: pointer;
+  font-size: 1em;
+  background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+  background-position: 25%;
+  background-size: 400%;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.send_data_btn:hover {
+  color: #ffffff;
+  background-position: 100%;
+}
+
 /* -- MESSAGE SECTION END -- */
 
+.scroll_btn {
+  height: 5vh;
+  background: black;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3em;
+}
+.scroll_btn h2{
+  color: aliceblue;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.up_anim{
+  animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(8px);
+  }
+  50%{
+transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(8px);
+  }
+}
+/* -- SCROLL TO TOP SECTION END -- */
 
-footer{
+footer {
   background-color: var(--black);
   color: #fff;
   text-align: center;
   padding: 2em 0;
 }
-footer p{
+footer p {
   padding: 15px 0;
   font-size: var(--Desktop-fs-mid);
   margin-bottom: 0.5em;
   letter-spacing: 3px;
 }
-.social_links{
+.social_links {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: large;
   font-size: var(--Desktop-fs-mid);
-
 }
-.social_links i{
+.social_links i {
   padding: 10px;
   color: gray;
   font-size: 1.3em;
 }
-.logo:hover{
-  transition: .8s ;
+.logo:hover {
+  transition: 0.8s;
   transform: translateY(-5px);
 }
-.social_links a .fa-facebook:hover{
+.social_links a .fa-facebook:hover {
   color: var(--fb-blue);
 }
-.social_links a .fa-x-twitter:hover{
+.social_links a .fa-x-twitter:hover {
   color: var(--twitter-black);
 }
-.social_links a .fa-instagram:hover{
+.social_links a .fa-instagram:hover {
   color: var(--instagram-pink);
 }
-.social_links a .fa-linkedin:hover{
-color: var(--linkedin-blue);
+.social_links a .fa-linkedin:hover {
+  color: var(--linkedin-blue);
 }
 
 /* -- FOOTER SECTION END -- */

@@ -233,14 +233,19 @@
       <section class="message_section" id="message">
         <div class="box">
           <h2>Message Us</h2>
-          <form action="" class="form_body">
-            <input type="text" placeholder="Enter Your Name" class="first">
-            <input type="tel" placeholder="Phone Number" class="second">
-            <input type="email" placeholder="Mail ID" class="third">
-            <textarea placeholder="You'r Message" cols="30" rows="10"></textarea>
-
+          <form class="form_body">
+            <input type="text" placeholder="* Enter Your Name " class="first" name="userName"  required>
+            <input type="tel" placeholder="Phone Number" class="second" name="userPhone" >
+            <input type="email" placeholder="* Mail ID" class="third" name="userMail"  required>
+            <textarea placeholder="* You'r Message" cols="30" rows="10" name="userExtraData" required></textarea>
+            <button class="send_data_btn">Send Data</button>
           </form>
         </div>
+      </section>
+      <section class="back_to_top">
+     <div class="scroll_btn">
+      <h2 class="scroll_btn_data">Back to top &nbsp;&nbsp; <i class="fa-solid fa-caret-up up_anim"></i></h2>
+     </div>
       </section>
       <section class="footer_section">
         <footer class="footer">
