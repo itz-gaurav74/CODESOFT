@@ -74,4 +74,14 @@ ScrollTop.addEventListener('click', function(){
 // ----------------------------------------------------
 // ----------------------------------------------------
 
+// const firstInp = document.querySelector('.first');
+// const thirdInp = document.querySelector('.third');
+// function sendBtn(){
+//     if (firstInp.value !== "" && thirdInp.value !== "") {
+//         alert('Data Send!')
+//     } else {
+//         alert('Error : Pls Enter Required fields ')
+//     }
+// }
+
 })

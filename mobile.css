@@ -9,12 +9,10 @@
 }
 
 @media (max-width: 550px) {
- 
-
   .nav_menu {
     display: none;
   }
-  nav{
+  nav {
     height: 7vh;
     align-items: center;
     display: flex;
@@ -221,23 +219,23 @@
   .go_live_arrow {
     display: none;
   }
-  .send_data_btn{
+  .send_data_btn {
     animation: trans 2s ease-in-out infinite;
   }
   @keyframes trans {
-    0%{
+    0% {
       background-position: 25%;
     }
-    50%{
+    50% {
       background-position: 100%;
       color: #fff;
     }
-    100%{
+    100% {
       background-position: 25%;
     }
   }
-
-  .scroll_btn h2{
+  /* -- SCROLL TO TOP SECTION -- */
+  .scroll_btn h2 {
     font-size: 1em;
   }
 
@@ -271,7 +269,7 @@
       color: gray;
     }
   }
-  .box{
+  .box {
     max-width: 80%;
   }
 }

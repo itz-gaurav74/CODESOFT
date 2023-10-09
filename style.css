@@ -31,6 +31,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: currentcolor;
 }
 .nav_logo {
   float: left;
@@ -256,7 +257,7 @@ a {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 50px;
+  font-size: 25px;
   cursor: pointer;
   font-weight: 600;
   margin-right: 5px;
